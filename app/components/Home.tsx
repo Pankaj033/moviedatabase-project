@@ -95,15 +95,15 @@ const Home = () => {
               ))}
             </div>
             <div className="flex flex-col md:flex-row gap-2 md:gap-6">
-              <div>Language: {movie?.original_language?.toUpperCase()}</div>
-              <div>Release: {movie?.release_date}</div>
-              <div>Runtime: {movie?.runtime} MIN.</div>
+              <div>Language: {movie?.original_language?.toUpperCase()}🎙️</div>
+              <div>Release: {movie?.release_date}📅</div>
+              <div>Runtime: {movie?.runtime} MIN⌛.</div>
               <div>Rating: {movie?.vote_average} ⭐</div>
             </div>
 
             <div className="pt-3 space-y-2 pr-2">
-              <div>OVERVIEW:</div>
-              <div className="lg:line-clamp-4">{movie?.overview}</div>
+              <div>StoryLine:</div>
+              <div className="lg:line-clamp-3">{movie?.overview}</div>
 
               <div
                 className="inline-block pt-4 cursor-pointer"
