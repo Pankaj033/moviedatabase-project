@@ -61,7 +61,7 @@ const Home = () => {
               {isImgLoading && <Loading />}
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               <div className="uppercase -translate-y-3 text-[26px] md:text-[34px] font-medium pr-4 text-white">
                 {movie?.title}
               </div>
