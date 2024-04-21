@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState, Suspense } from 'react';
 import Loading from './Loading';
 import Image from 'next/image';
@@ -26,7 +27,6 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isImgLoading, setIsImgLoading] = useState(false);
   const [movie, setMovie] = useState<IMovie>();
-  const [showPlayer, setShowPlayer] = useState(false);
 
   const SuspensefulSearchParams = () => {
     const searchParams = useSearchParams();
@@ -34,7 +34,7 @@ const Home = () => {
   };
 
 
-  const searchParams = SuspensefulSearchParams(); 
+  const searchParams = SuspensefulSearchParams();
 
   useEffect(() => {
     setIsLoading(true);
@@ -109,7 +109,6 @@ const Home = () => {
 
               <div
                 className="inline-block pt-4 cursor-pointer"
-                onClick={() => setShowPlayer(true)}
               >
                 <div className="flex gap-2 items-center bg-white text-black px-4 py-2 mb-6 hover:bg-[#b4b4b4]">
                   <BsPlayFill size={24} />
